@@ -11,6 +11,11 @@ body {
   background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
+  background-image: url(Assets/download.jpeg);
+  background-size: contain;
+  /* padding: 100px; */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Navbar */
@@ -23,15 +28,26 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 6px;
+  text-decoration: none;
+  padding: 8px 12px;
 }
 
-nav a {
+/* nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
   padding: 8px 15px;
   transition: 0.3s;
+} */
+
+nav a {
+  display: flex;
+  align-items: center; /* vertically centers icon + text */
+  gap: 6px; /* small space between icon and text */
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 12px; /* optional */
 }
 
 nav a:hover {
